@@ -6,3 +6,22 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
+anyhow = "1.0.71"
+dashmap = "5.4.0"
+hex-literal = "0.4"
+hex = "0.4.3"
+bytes = "1.4.0"
+dotenv = "0.15.0"
+auto_impl = { version = "1.1", default-features = false }
+
+# async
+futures = "0.3.27"
+tokio = { version = "1.28", features = ["full"] }
+tokio-stream = { version = "0.1", features = ['sync'] }
+
+#json
+serde = "1.0.193"
+serde_json = "1.0.109"
+#redis
+mini-redis = "0.4"
