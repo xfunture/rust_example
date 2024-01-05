@@ -59,7 +59,7 @@ async fn main(){
                 match cmd{
                     Get {key,resp} => {
                         let res = client.get(&key).await;
-                        // let _ = resp.send(res);
+                        let _ = resp.send(res);
                         // println!("\nGet function:\nkey:{}\nvalue:{:#?}",key,res.unwrap());
 
                     }
