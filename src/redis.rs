@@ -12,7 +12,7 @@ type Db = Arc<Mutex<HashMap<String,Bytes>>>;
 pub async fn test_redis(){
     //Bind the listener to the address
     //监听指定地址，等待TCP连接进来
-    let listener = TcpListener::bind("127.0.0.1:6379").await.unwrap();
+    let listener = TcpListener::bind("127.0.0.1:6370").await.unwrap();
 
     println!("listening");
 
